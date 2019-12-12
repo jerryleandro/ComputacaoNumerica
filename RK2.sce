@@ -9,6 +9,7 @@ function [x,y] = RK(a,b,h,y0)
     end
 endfunction
 
-function f = df(x)
-    f = ("derivada da função")
+function f = df(x , y)
+    f = (12-y)
 endfunction
+plot(x,y,'o-')
